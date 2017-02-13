@@ -30,6 +30,10 @@ var Editor = React.createClass({
     }
   },
 
+  componentDidMount: function () {
+    
+  },
+
   handleTextChange: function(e){
     var change = e.target.value
     this.setState({
