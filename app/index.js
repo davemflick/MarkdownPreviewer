@@ -12,7 +12,9 @@ var App = React.createClass ({
 	render: function () {
 		return (
 			<div className='container-fluid'>
-			 <h1>Markdown Previewer</h1>
+			<div className='titleBox'>
+			 <h1 id='title'>Markdown Preview</h1>
+			</div>
 			 <Editor />
 			</div>
 			)

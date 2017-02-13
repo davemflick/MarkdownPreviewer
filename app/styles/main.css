@@ -2,24 +2,50 @@
 	margin: 0;
 }
 
+$blackish: #3b3a36;
+$greyish: #b3c2bf;
+$whitish: #e9ece5;
+$blueish: #c0dfd9;
+$greenish: #c5d5cb;
+$borders: 1px solid $blackish;
+
 body {
- 	background-color: #ccc;
+ 	background-color: $greenish;
+ 	color: $blackish;
+ 	display: flex;
+ 	justify-content: center;
 }
 
-$borders: 1px solid black;
+.titleBox{
+	margin-top: 20px;
+	background-color: $blueish;
+	display: flex;
+	justify-content: center;
 
-.container-fluid {
-  h1 {
-  	text-align: center;
-	color: red;
+	  #title{
+	color: $blackish;
+	text-shadow: 3px 3px $greyish;
      }
+
 }
 
-.editorContainer {
+.textContainers{
+	#textTitle{
+		text-align: center;
+		color: $blackish;
+		text-shadow: 2px 2px $greyish;
+	}
+}
+
+#editorContainer {
 	height: 400px;
-	border: $borders;
 	padding: 0;
 	 #editorInput {
+	 	background-color: $whitish;
+	 	border: none;
+	 	padding-right: 5px;
+		padding-left: 5px;
+	 	border-radius: 5%;
 	 	margin: 0;
 		height: 100%;
 		width: 100%;
@@ -29,9 +55,10 @@ $borders: 1px solid black;
 
 .previewContainer {
 	height: 400px;
-	border: $borders;
+	
+	border-radius: 5%;
 	padding-right: 5px;
 	padding-left: 5px;
 	overflow: scroll;
-	background-color: white;
+	background-color: $whitish;
 }
