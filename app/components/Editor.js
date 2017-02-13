@@ -24,33 +24,33 @@ var Editor = React.createClass({
   
 
   getInitialState: function (){
-    var innerText = `Some **QUICK TIPS** for this __Markdown Preview__.
-
-Two spaces needed to
-create space
-between paragraphs
-
-For headers use # and a space. the number of # correspond to the header size you want.
-# h1
-## h2
-### h3
-
-Look, big text!
-------------
-
-__Did you say Bold? Use two underscores__.
-This is also **Bold**
-
-_One underscore to make text Italicized_.
-This is also *Italic*
-
-
-Three underscores for horizontal rule
-___
-
-For more go to [MarkdownLivePreview](http://markdownlivepreview.com/)
-
-Or go to [Wikipedia](http://en.wikipedia.org/wiki/Markdown)`
+    var innerText = 'Some **QUICK TIPS** for this __Markdown Preview__.\r\
+\r\
+Two spaces needed to\r\
+create space\r\
+between paragraphs\r\
+\r\
+For headers use # and a space. the number of # correspond to the header size you want.\r\
+# h1\r\
+## h2\r\
+### h3\r\
+\r\
+Look, big text!\r\
+------------\r\
+\r\
+__Did you say Bold? Use two underscores__.\r\
+This is also **Bold**\r\
+\r\
+_One underscore to make text Italicized_.\r\
+This is also *Italic*\r\
+\r\
+\r\
+Three underscores for horizontal rule\r\
+___\r\
+\r\
+For more go to [MarkdownLivePreview](http://markdownlivepreview.com/)\r\
+\r\
+Or go to [Wikipedia](http://en.wikipedia.org/wiki/Markdown)'
 
     return {
       text: innerText,
