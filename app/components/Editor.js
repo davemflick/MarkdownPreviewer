@@ -50,8 +50,8 @@ ___
 
 For more go to [MarkdownLivePreview](http://markdownlivepreview.com/)
 
-Or go to [Wikipedia](http://en.wikipedia.org/wiki/Markdown)
-`
+Or go to [Wikipedia](http://en.wikipedia.org/wiki/Markdown)`
+
     return {
       text: innerText,
        MarkedText: this.translateMarkdown(innerText)
