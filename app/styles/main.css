@@ -1,0 +1,26 @@
+body {
+ background-color: #ccc;
+}
+
+$borders: 1px solid black;
+
+.container {
+ text-align: center;
+  h1 {
+	  color: red;
+     }
+}
+
+.editorContainer {
+	height: 400px;
+	border: $borders;
+	#editorInput {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.previewContainer {
+	height: 400px;
+	border: $borders;
+}
