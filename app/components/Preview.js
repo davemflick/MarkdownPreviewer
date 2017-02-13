@@ -1,10 +1,9 @@
-import React from 'react';
-import Marked from 'marked';
-import { Editor } from './Editor';
+var React = require('react');
+var Marked = require('marked');
+var Editor = require('./Editor');
 
-export class Preview extends React.Component {
-
-	render() {
+var Preview = React.createClass ({
+	render: function() {
 		return (
 			<div className='previewContainer' value="This Text Here">
 			
@@ -12,4 +11,6 @@ export class Preview extends React.Component {
 
 		);
 	}
-}
+})
+
+module.exports = Preview;
