@@ -72,7 +72,7 @@ Or go to [Wikipedia](http://en.wikipedia.org/wiki/Markdown)'
   
 	render: function() {
 		return (
-      <div className='col-xs-10 col-xs-offset-1'>
+      <div className='someContainer'>
 			<TextBoxWrapper header='Input' id='editorContainer'>
 			  <textarea id='editorInput' type='text' value={this.state.text} onChange={this.handleTextChange}>
 			 </textarea>

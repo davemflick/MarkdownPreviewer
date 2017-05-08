@@ -1,13 +1,18 @@
 * {
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
 
-body {
+body, html {
   background-color: #c5d5cb;
   color: #3b3a36;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
 
 .titleBox {
+  width: 100%;
   margin-top: 20px;
   background-color: #c0dfd9;
   display: flex;
@@ -16,10 +21,16 @@ body {
     color: #3b3a36;
     text-shadow: 3px 3px #b3c2bf; }
 
-.textContainers #textTitle {
-  text-align: center;
-  color: #3b3a36;
-  text-shadow: 2px 2px #b3c2bf; }
+.textContainers {
+  width: 100%; }
+  .textContainers #textTitle {
+    text-align: center;
+    color: #3b3a36;
+    text-shadow: 2px 2px #b3c2bf; }
+
+.someContainer {
+  width: 100%;
+  display: flex; }
 
 #editorContainer {
   height: 400px;
@@ -32,10 +43,11 @@ body {
     border-radius: 5%;
     margin: 0;
     height: 100%;
-    width: 100%; }
+    width: 95%; }
 
 .previewContainer {
   height: 400px;
+  width: 95%;
   border-radius: 5%;
   padding-right: 5px;
   padding-left: 5px;

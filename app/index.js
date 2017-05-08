@@ -11,7 +11,7 @@ var App = React.createClass ({
 
 	render: function () {
 		return (
-			<div className='container-fluid'>
+			<div className='mainContainer'>
 			<div className='titleBox'>
 			 <h1 id='title'>Markdown Preview</h1>
 			</div>
