@@ -1,5 +1,4 @@
 *{
-	margin: 0;
 	box-sizing: border-box;
 }
 
@@ -13,8 +12,6 @@ $borders: 1px solid $blackish;
 body, html {
  	background-color: $greenish;
  	color: $blackish;
- 	display: flex;
- 	justify-content: center;
  	margin: 0;
  	padding: 0;
  	width: 100%;
@@ -24,7 +21,7 @@ body, html {
 
 .titleBox{
 	width: 100%;
-	margin-top: 20px;
+	padding: 40px 0;
 	background-color: $blueish;
 	display: flex;
 	justify-content: center;
@@ -38,6 +35,8 @@ body, html {
 
 .textContainers{
 	width: 100%;
+	height: 800px;
+	margin: 30px auto;
 	#textTitle{
 		text-align: center;
 		color: $blackish;
@@ -47,34 +46,49 @@ body, html {
 
 .someContainer {
 	width: 100%;
+	padding: 0 auto;
+	margin: 0 auto;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	.inputOutput{
-		width: 50%;
+		margin: 0 auto;
+		width: 49%;
 		height: 500px;
 	}
 }
 
-#editorContainer {
-	padding: 0;
-	
-	 #editorInput {
-	 	background-color: $whitish;
-	 	border: none;
-	 	padding: 8px;
-	 	border-radius: 5%;
-	 	margin: 0;
-		height: 100%;
-		width: 95%;
-	}
+ .editorInput {
+ 	background-color: $whitish;
+ 	margin-left: 5%;
+ 	border: none;
+ 	padding: 8px;
+ 	border-radius: 5%;
+	height: 100%;
+	width: 90%;
 }
 
-
 .previewContainer {
-	width: 95%;
+	width: 90%;
+	margin: 0 auto;
 	height: 100%;
 	border-radius: 5%;
 	padding: 8px;
 	overflow: scroll;
 	background-color: $whitish;
 }
+
+@media screen and (max-width: 700px){
+	.someContainer{
+		flex-wrap: wrap;
+	}
+	.inputOutput{
+		width: 100%;
+	}
+
+
+}
+
+
+
+
+

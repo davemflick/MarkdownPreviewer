@@ -1,12 +1,9 @@
 * {
-  margin: 0;
   box-sizing: border-box; }
 
 body, html {
   background-color: #c5d5cb;
   color: #3b3a36;
-  display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -14,7 +11,7 @@ body, html {
 
 .titleBox {
   width: 100%;
-  margin-top: 20px;
+  padding: 40px 0;
   background-color: #c0dfd9;
   display: flex;
   justify-content: center; }
@@ -23,7 +20,9 @@ body, html {
     text-shadow: 3px 3px #b3c2bf; }
 
 .textContainers {
-  width: 100%; }
+  width: 100%;
+  height: 800px;
+  margin: 30px auto; }
   .textContainers #textTitle {
     text-align: center;
     color: #3b3a36;
@@ -31,29 +30,38 @@ body, html {
 
 .someContainer {
   width: 100%;
+  padding: 0 auto;
+  margin: 0 auto;
   display: flex;
-  justify-content: center; }
+  justify-content: space-around; }
   .someContainer .inputOutput {
-    width: 50%;
+    margin: 0 auto;
+    width: 49%;
     height: 500px; }
 
-#editorContainer {
-  padding: 0; }
-  #editorContainer #editorInput {
-    background-color: #e9ece5;
-    border: none;
-    padding: 8px;
-    border-radius: 5%;
-    margin: 0;
-    height: 100%;
-    width: 95%; }
+.editorInput {
+  background-color: #e9ece5;
+  margin-left: 5%;
+  border: none;
+  padding: 8px;
+  border-radius: 5%;
+  height: 100%;
+  width: 90%; }
 
 .previewContainer {
-  width: 95%;
+  width: 90%;
+  margin: 0 auto;
   height: 100%;
   border-radius: 5%;
   padding: 8px;
   overflow: scroll;
   background-color: #e9ece5; }
+
+@media screen and (max-width: 700px) {
+  .someContainer {
+    flex-wrap: wrap; }
+
+  .inputOutput {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

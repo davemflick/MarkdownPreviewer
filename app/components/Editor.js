@@ -73,14 +73,14 @@ Or go to [Wikipedia](http://en.wikipedia.org/wiki/Markdown)'
 	render: function() {
 		return (
       <div className='someContainer'>
-			<TextBoxWrapper header='Input' id='editorContainer' className="inputOutput">
-			  <textarea id='editorInput' type='text' value={this.state.text} onChange={this.handleTextChange}>
-			 </textarea>
-			</TextBoxWrapper>
-      <TextBoxWrapper header='Output' className="inputOutput">
-       <div className='previewContainer' dangerouslySetInnerHTML={this.state.MarkedText}>
-      </div>
-      </TextBoxWrapper>
+  			<TextBoxWrapper header='Input' className="inputOutput editorContainer">
+  			  <textarea className='editorInput' type='text' value={this.state.text} onChange={this.handleTextChange}>
+  			 </textarea>
+  			</TextBoxWrapper>
+        <TextBoxWrapper header='Output' className="inputOutput">
+         <div className='previewContainer' dangerouslySetInnerHTML={this.state.MarkedText}>
+        </div>
+        </TextBoxWrapper>
       </div>
 		)
 	}
